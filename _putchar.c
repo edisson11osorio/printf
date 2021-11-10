@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <unistd.h>
 
 /**
