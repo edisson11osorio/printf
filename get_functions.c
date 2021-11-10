@@ -1,18 +1,18 @@
 #include "main.h"
-/*
+/**
 * print_i - print an integer number
-*
-* return: 1
+* @i: argument
+* Return: 1
 */
 int print_i(va_list i)
 {
 	printf("%c", va_arg(i, int));
 	return (1);
 }
-/*
+/**
 * print_c - print a char
-*
-* return: 1
+* @c: argument
+* Return: 1
 */
 int print_c(va_list c)
 {
@@ -21,10 +21,10 @@ int print_c(va_list c)
 	_putchar(chg);
 	return (1);
 }
-/*
+/**
 * print_d - print a dec
-*
-* return: 1
+* @d: argument
+* Return: 1
 */
 int print_d(va_list d)
 {
@@ -32,10 +32,10 @@ int print_d(va_list d)
 	return (1);
 }
 
-/*
+/**
 * print_s - print a string
-*
-* return: i
+* @s: armugent
+* Return: i
 */
 
 int print_s(va_list s)
@@ -55,10 +55,11 @@ int print_s(va_list s)
 		return (i);
 	}
 }
-/*
-* print_percent - print an integer number
-*
-* return: 1
+
+/**
+* print_percent - print a charcter %
+* @per: argument
+* Return: 1
 */
 int print_percent(va_list per)
 {
