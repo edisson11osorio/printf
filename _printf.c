@@ -1,16 +1,18 @@
 #include "main.h"
-
-/*
+#include <stdarg.h>
+#include <stdio.h>
+#include <string.h>
+/**
 *_printf - function  that prints all.
-*@format-argument
+*@format: argument
 *Return: len
 */
-
 int _printf(const char *format, ...)
 {
-    int i = 0, len = 0;
-    int (*f)(va_list);
-    va_list argm;
+	int i = 0, len = 0;
+	int (*f)(va_list);
+	va_list argm;
+
 	va_start(argm, format);
 	if (format == NULL)
 		return (-1);
