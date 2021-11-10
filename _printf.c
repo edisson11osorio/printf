@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdarg.h>
-#include <stdio.h>
-#include <string.h>
 /**
 *_printf - function  that prints all.
 *@format: argument
