@@ -52,7 +52,7 @@ int print_string(va_list argument)
 }
 /**
 * print_percent - print a charcter %
-* @per: argument
+* @argument: argument
 * Return: 1
 */
 int print_percent(va_list argument)
