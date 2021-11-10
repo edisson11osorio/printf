@@ -18,9 +18,10 @@ print_t;
 int _putchar(char c);
 int _printf(const char *format, ...);
 int (*get_op_print(const char *format))(va_list);
-int print_i(va_list i);
-int print_d(va_list d);
-int print_s(va_list s);
-int print_percent(va_list per);
+int print_decimal(va_list argument);
+int print_string(va_list argument);
+int print_integer(va_list argument);
+int print_percent(va_list argument);
+int print_char(va_list argument);
 int print_c(va_list c);
 #endif

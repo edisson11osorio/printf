@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
-*get_op_print- select the correct function
-*@format: pointer.
-*Return: pointer
+* get_op_print - select the correct function
+* @format: pointer
+* Return: pointer
 */
 int (*get_op_print(const char *format))(va_list)
 {
 	int i;
 	print_t prints[] = {
-		{"c", print_c},
-		{"i", print_i},
-		{"d", print_d},
-		{"s", print_s},
+		{"c", print_char},
+		{"i", print_integer},
+		{"d", print_decimal},
+		{"s", print_string},
 		{"%%", print_percent},
 		{NULL, NULL}};
 	for (i = 0; prints[i].t; i++)

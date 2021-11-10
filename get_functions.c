@@ -1,46 +1,46 @@
 #include "main.h"
 /**
-* print_i - print an integer number
-* @i: argument
+* print_integer - print an integer number
+* @argument: argument
 * Return: 1
 */
-int print_i(va_list i)
+int print_integer(va_list argument)
 {
-	printf("%c", va_arg(i, int));
+	printf("%c", va_arg(argument, int));
 	return (1);
 }
 /**
-* print_c - print a char
-* @c: argument
+* print_char - print a char
+* @argument: argument
 * Return: 1
 */
-int print_c(va_list c)
+int print_char(va_list argument)
 {
-	char chg = (char)va_arg(c, int);
+	char character = (char)va_arg(argument, int);
 
-	_putchar(chg);
+	_putchar(character);
 	return (1);
 }
 /**
-* print_d - print a dec
-* @d: argument
+* print_decimal - print a dec
+* @argument: argument
 * Return: 1
 */
-int print_d(va_list d)
+int print_decimal(va_list argument)
 {
-	printf("%c", va_arg(d, int));
+	printf("%c", va_arg(argument, int));
 	return (1);
 }
 
 /**
-* print_s - print a string
-* @s: armugent
+* print_string - print a string
+* @argument: argument
 * Return: i
 */
-int print_s(va_list s)
+int print_string(va_list argument)
 {
 	int i = 0;
-	char *str = va_arg(s, char *);
+	char *str = va_arg(argument, char *);
 
 	if (!str)
 		str = "(null)";
@@ -55,9 +55,9 @@ int print_s(va_list s)
 * @per: argument
 * Return: 1
 */
-int print_percent(va_list per)
+int print_percent(va_list argument)
 {
-	(void)(per);
+	(void)(argument);
 	_putchar('%');
 	return (1);
 }
