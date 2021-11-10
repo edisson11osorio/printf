@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 			len++;
 		}
 		if (format[i] == '%' && format[i + 1] == '\0')
-			return (len);
+			return (-1);
 		if (!format[i])
 			return (len);
 		get = get_op_print(&format[i + 1]);
