@@ -2,7 +2,7 @@
 /**
 * print_i - print an integer number
 * @i: argument
-* Return: 1
+* Return: 0
 */
 int print_i(va_list i)
 {
@@ -24,7 +24,7 @@ int print_c(va_list c)
 /**
 * print_d - print a dec
 * @d: argument
-* Return: 1
+* Return: 0
 */
 int print_d(va_list d)
 {
