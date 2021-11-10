@@ -7,7 +7,7 @@
 int _printf(const char *format, ...)
 {
 	int i = 0, len = 0;
-	int (*f)(va_list);
+	int (*get)(va_list);
 	va_list argm;
 
 	va_start(argm, format);
@@ -26,11 +26,11 @@ int _printf(const char *format, ...)
 		}
 		if (format[i] == '\0')
 			return (len);
-		f = get_op_print(&format[i + 1]);
+		get = get_op_print(&format[i + 1]);
 
-		if (f != NULL)
+		if (get != NULL)
 		{
-			len = len + f(argm);
+			len = len + get(argm);
 			i = i + 2;
 			continue;
 		}
