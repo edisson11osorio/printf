@@ -108,8 +108,6 @@ int main(void)
     printf("Unknown:[%r]\n");
     return (0);
 }
-```
-
 Let's try to printf a simple sentence.
 Let's try to printf a simple sentence.
 Length:[39, 39]
@@ -146,3 +144,4 @@ Mapu@ubuntu:~/c/printf$
 
 - [_Carolina Espitia_](https://github.com/caritoespicaita) - caritoespicaita@hotmail.com
 - [_Edisson Osorio_](https://github.com/edisson11osorio) - edissonosi12@gmail.com
+```
