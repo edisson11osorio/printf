@@ -6,6 +6,8 @@
 */
 int print_i(va_list i)
 {
+	printf("%c", va_arg(i, int));
+	return (1);
 }
 /**
 * print_c - print a char
@@ -26,6 +28,8 @@ int print_c(va_list c)
 */
 int print_d(va_list d)
 {
+	printf("%c", va_arg(d, int));
+	return (1);
 }
 
 /**
