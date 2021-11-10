@@ -1,17 +1,9 @@
 #include "main.h"
-<<<<<<< HEAD
 
-/**
-* get_op_print - select the correct function
-* @format - pointer
-* @va_list - pointer.
-* Return:: pointer
-=======
 /**
 *get_op_print- select the correct function
 *@format: pointer.
 *Return: pointer
->>>>>>> 86d321761d8e5642046e978ebdb0005e19fa14f9
 */
 int (*get_op_print(const char *format))(va_list)
 {
