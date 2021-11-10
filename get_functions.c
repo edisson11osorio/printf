@@ -2,12 +2,12 @@
 /**
 * print_i - print an integer number
 * @i: argument
-* Return: 0
+* Return: 1
 */
 int print_i(va_list i)
 {
-	//printf("%c", va_arg(i, int));
-	return (0);
+	printf("%c", va_arg(i, int));
+	return (1);
 }
 /**
 * print_c - print a char
@@ -24,11 +24,11 @@ int print_c(va_list c)
 /**
 * print_d - print a dec
 * @d: argument
-* Return: 0
+* Return: 1
 */
 int print_d(va_list d)
 {
-	//printf("%c", va_arg(d, int));
+	printf("%c", va_arg(d, int));
 	return (0);
 }
 
