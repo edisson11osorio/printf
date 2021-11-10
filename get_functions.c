@@ -29,7 +29,7 @@ int print_c(va_list c)
 int print_d(va_list d)
 {
 	(va_arg(d, int));
-	return (0);
+	return (1);
 }
 
 /**
