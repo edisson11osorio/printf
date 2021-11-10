@@ -1,0 +1,16 @@
+.TH "" "" "" "" ""
+.hy
+.SH _PRINTF
+.SS NAME
+.IP
+.nf
+\f[C]
+    _printf \-  printf function does
+\f[R]
+.fi
+.SS SYNOPSIS
+.IP
+.nf
+\f[C]
+    #include \[dq]main.h\[dq] \-\-\- is necessary to include it in the header
+    int _printf(const char *format, ...) \-\-\- is the prototype
