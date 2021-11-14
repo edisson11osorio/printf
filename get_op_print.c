@@ -11,6 +11,8 @@ int (*get_op_print(const char *format))(va_list)
 	print_t prints[] = {
 		{"c", print_char},
 		{"s", print_string},
+		{"i", print_integer},
+		{"d", print_decimal},
 		{"%%", print_percent},
 		{NULL, NULL}};
 	for (i = 0; prints[i].t; i++)
