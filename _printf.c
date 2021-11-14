@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
             len++;
         }
         if (!format[i])
-            return (count);
+            return (len);
         f = get_op_print(&format[i + 1]);
         if (f != NULL)
         {
