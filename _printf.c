@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
         for (; format[i] != '%' && format[i]; i++)
         {
             _putchar(format[i]);
-            count++;
+            len++;
         }
         if (!format[i])
             return (count);
