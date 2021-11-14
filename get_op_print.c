@@ -10,8 +10,6 @@ int (*get_op_print(const char *format))(va_list)
 	int i;
 	print_t prints[] = {
 		{"c", print_char},
-		{"i", print_integer},
-		{"d", print_decimal},
 		{"s", print_string},
 		{"%%", print_percent},
 		{NULL, NULL}};
