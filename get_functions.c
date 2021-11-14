@@ -1,14 +1,5 @@
 #include "main.h"
-/**
-* print_integer - print an integer number
-* @argument: argument
-* Return: 1
-*/
-int print_integer(va_list argument)
-{
-	printf("%c", va_arg(argument, int));
-	return (1);
-}
+
 /**
 * print_char - print a char
 * @argument: argument
@@ -19,16 +10,6 @@ int print_char(va_list argument)
 	char character = (char)va_arg(argument, int);
 
 	_putchar(character);
-	return (1);
-}
-/**
-* print_decimal - print a dec
-* @argument: argument
-* Return: 1
-*/
-int print_decimal(va_list argument)
-{
-	printf("%c", va_arg(argument, int));
 	return (1);
 }
 
