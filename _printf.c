@@ -6,39 +6,38 @@
 */
 int _printf(const char *format, ...)
 {
-	int i = 0, len = 0;
-	int (*get)(va_list);
-	va_list argm;
+	unsigned int i = 0, count = 0;
+	va_list valist;
+	int (*f)(va_list);
 
-	va_start(argm, format);
 	if (format == NULL)
 		return (-1);
+	va_start(valist, format);
 	while (format[i])
 	{
-		for (; format[i] != '%' && format[i] != '\0'; i++)
+		for (; format[i] != '%' && format[i]; i++)
 		{
 			_putchar(format[i]);
-			len++;
+			count++;
 		}
-		if (format[i] == '%' && format[i + 1] == '\0')
-			return (-1);
 		if (!format[i])
-			return (len);
-		get = get_op_print(&format[i + 1]);
-
-		if (get != NULL)
+			return (count);
+		f = get_op_print(&format[i + 1]);
+		if (f != NULL)
 		{
-			len = len + get(argm);
-			i = i + 2;
+			count += f(valist);
+			i += 2;
 			continue;
 		}
+		if (!format[i + 1])
+			return (-1);
 		_putchar(format[i]);
-		len++;
+		count++;
 		if (format[i + 1] == '%')
-			i = i + 2;
+			i += 2;
 		else
 			i++;
 	}
-	va_end(argm);
-	return (len);
+	va_end(valist);
+	return (count);
 }
